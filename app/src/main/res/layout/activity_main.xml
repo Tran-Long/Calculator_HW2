@@ -20,22 +20,22 @@
             android:textColor="#44E10B"
             android:textSize="30sp" />
     </LinearLayout>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_gravity="center"
-        android:text="0"
-        android:textSize="50sp">
-
-    </EditText>
     <TextView
+        android:id="@+id/text_view1"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_gravity="center"
+        android:layout_height="100dp"
         android:text=""
-        android:gravity="right"
-        android:textSize="60sp">
-
+        android:padding="8dp"
+        android:gravity="right|top"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="0"
+        android:padding="8dp"
+        android:gravity="right|bottom"
+        android:textSize="80sp">
     </TextView>
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,21 +47,17 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_weight="1">
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="20sp"
-                android:text="%">
-            </Button>
-            <Button
+                android:id="@+id/CE"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="CE"
-                android:textSize="20sp">
-            </Button>
+                android:textSize="20sp"></Button>
+
             <Button
+                android:id="@+id/C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -69,39 +65,15 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/BS"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="DEL">
-            </Button>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="1/x"
+                android:text="BS"
                 android:textSize="20sp">
             </Button>
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="X^2"
-                android:textSize="20sp">
-            </Button>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="X^1/2"
-                android:textSize="20sp">
-            </Button>
-            <Button
+                android:id="@+id/divide"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -109,12 +81,51 @@
                 android:textSize="20sp">
             </Button>
         </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_weight="1">-->
+<!--            <Button-->
+<!--                android:id="@+id/x_reverse"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="1/x"-->
+<!--                android:textSize="20sp">-->
+<!--            </Button>-->
+<!--            <Button-->
+<!--                android:id="@+id/x_pow_2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="X^2"-->
+<!--                android:textSize="20sp">-->
+<!--            </Button>-->
+<!--            <Button-->
+<!--                android:id="@+id/x_pow_0.5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="X^1/2"-->
+<!--                android:textSize="20sp">-->
+<!--            </Button>-->
+<!--            <Button-->
+<!--                android:id="@+id/divide"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="/"-->
+<!--                android:textSize="20sp">-->
+<!--            </Button>-->
+<!--        </LinearLayout>-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_weight="1">
             <Button
+                android:id="@+id/num_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -122,6 +133,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -129,6 +141,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -136,6 +149,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/multiply"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -149,6 +163,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <Button
+                android:id="@+id/num_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -156,6 +171,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -163,6 +179,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -170,6 +187,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/minus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -183,6 +201,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <Button
+                android:id="@+id/num_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -190,6 +209,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -197,6 +217,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -204,6 +225,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/plus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -217,6 +239,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <Button
+                android:id="@+id/change_sign"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -224,6 +247,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/num_0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -231,6 +255,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/float_signature"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -238,6 +263,7 @@
                 android:textSize="20sp">
             </Button>
             <Button
+                android:id="@+id/equal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
